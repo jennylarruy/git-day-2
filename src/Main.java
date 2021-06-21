@@ -9,6 +9,9 @@ public class Main {
 
         String s = "hej";
         System.out.println(s);
+        String s2 = "då";
+        System.out.println(s+s2);
+
 
         originalArray = bubbleSortInDescendingOrder(originalArray);
         for (int i: originalArray){
