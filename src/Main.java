@@ -7,14 +7,14 @@ public class Main {
             System.out.println(i);
         }
 
-        int j=10;
+        String s = "hej";
+        System.out.println(s);
 
         originalArray = bubbleSortInDescendingOrder(originalArray);
         for (int i: originalArray){
             System.out.println(i);
         }
 
-        System.out.println(10);
     }
 
     public static int[] bubbleSort(int[] data) {
