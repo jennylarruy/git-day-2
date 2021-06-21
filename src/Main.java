@@ -1,14 +1,20 @@
-import java.util.ArrayList;
-import java.util.List;
-
 public class Main {
 
     public static void main(String[] args) {
         int[] originalArray = {3,0,1,8,7,2,5,4,6,9};
-        originalArray = bubbleSortInDecendingOrder(originalArray);
+        originalArray = bubbleSort(originalArray);
         for (int i: originalArray){
             System.out.println(i);
         }
+
+        int j=10;
+
+        originalArray = bubbleSortInDescendingOrder(originalArray);
+        for (int i: originalArray){
+            System.out.println(i);
+        }
+
+        System.out.println(10);
     }
 
     public static int[] bubbleSort(int[] data) {
@@ -25,7 +31,7 @@ public class Main {
         return data;
     }
 
-    public static int[] bubbleSortInDecendingOrder(int[] data) {
+    public static int[] bubbleSortInDescendingOrder(int[] data) {
         int storage;
         for (int j = data.length - 1; j > 0; j--) {
             for (int i = 0; i < j; i++) {
